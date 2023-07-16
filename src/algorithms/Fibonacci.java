@@ -5,7 +5,7 @@ public class Fibonacci {
     public  Fibonacci(){
         gettingData();
     }
-    private void gettingData(){
+    private void gettingData() {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the position to fibonacci: ");
@@ -24,7 +24,7 @@ public class Fibonacci {
             gettingData();
         }
     }
-    private void forFibonacci(int position){
+    private void forFibonacci(int position) {
         long fibValue = 0;
         long a = 1;
         long b = 0;
@@ -44,7 +44,7 @@ public class Fibonacci {
                         "\n\tExecution time in nanoseconds: " + timeElapsed +
                         "\n\tExecution time in milliseconds: " + timeElapsed/1000000;
     }
-    private void functionOverFunctionFibonacci(int position){
+    private void functionOverFunctionFibonacci(int position) {
         long startTime = System.nanoTime();
 
         double fibValue = findFibNumber(position);
@@ -60,8 +60,8 @@ public class Fibonacci {
         if (position == 1) return 1;
         return findFibNumber(position - 1) + findFibNumber(position - 2);
     }
-    public String getResult() {
-        return this.result;
+    public void getResult() {
+        System.out.println(this.result);
     }
 
 }
