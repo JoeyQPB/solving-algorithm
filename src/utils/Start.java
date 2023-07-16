@@ -8,8 +8,8 @@ public class Start {
 
                         Pick one:\s
                         \t1 - Fibonacci\s
-                        \t2 - linear Search\s
-                        \t3 - \s
+                        \t2 - Linear Search\s
+                        \t3 - Binary Search\s
                         \t4 - \s""");
 
         return Integer.parseInt(sc.nextLine());

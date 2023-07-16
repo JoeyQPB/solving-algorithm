@@ -22,6 +22,10 @@ public class Main {
                     LinearSearch linearSearch = new LinearSearch();
                     linearSearch.getResult();
                 }
+                case 3 -> {
+                    BinarySearch binarySearch = new BinarySearch();
+                    binarySearch.getResult();
+                }
                 default -> System.out.println("Invalid Option!");
             }
 
