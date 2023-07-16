@@ -27,8 +27,8 @@ public class Main {
                     binarySearch.showResult();
                 }
                 case 4 -> {
-                    System.out.println("Bubble Sort");
-                    System.out.println("Bubble Sort");
+                    BubbleSort bubbleSort = new BubbleSort();
+                    bubbleSort.showResult();
                 }
                 default -> System.out.println("Invalid Option!");
             }

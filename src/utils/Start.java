@@ -10,7 +10,7 @@ public class Start {
                         \t1 - Fibonacci\s
                         \t2 - Linear Search\s
                         \t3 - Binary Search\s
-                        \t4 - \s""");
+                        \t4 - Bubble Sort\s""");
 
         return Integer.parseInt(sc.nextLine());
     }
