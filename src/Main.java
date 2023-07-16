@@ -16,16 +16,16 @@ public class Main {
             switch (pick) {
                 case 1 -> {
                     Fibonacci fibonacci = new Fibonacci();
-                    System.out.println(fibonacci.getResult());
+                    fibonacci.getResult();
                 }
                 case 2 -> {
-                    System.out.println("your choice was 2");
-                    System.out.println("your choice was 2");
+                    LinearSearch linearSearch = new LinearSearch();
+                    linearSearch.getResult();
                 }
                 default -> System.out.println("Invalid Option!");
             }
 
-            System.out.println("\nDid you try again? (y/n)");
+            System.out.println("\nDid you wanna try again? (y/n)");
         } while (sc.nextLine().trim().equalsIgnoreCase("Y"));
 
         sc.close();
