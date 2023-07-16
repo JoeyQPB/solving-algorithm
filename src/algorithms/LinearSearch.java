@@ -38,7 +38,7 @@ public class LinearSearch {
 
         return "After " + attempts + " attempts we found the number: " + this.numberToFind;
     }
-    public void getResult() {
+    public void showResult() {
         System.out.println(this.result);
     }
 }

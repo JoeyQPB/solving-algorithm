@@ -16,15 +16,19 @@ public class Main {
             switch (pick) {
                 case 1 -> {
                     Fibonacci fibonacci = new Fibonacci();
-                    fibonacci.getResult();
+                    fibonacci.showResult();
                 }
                 case 2 -> {
                     LinearSearch linearSearch = new LinearSearch();
-                    linearSearch.getResult();
+                    linearSearch.showResult();
                 }
                 case 3 -> {
                     BinarySearch binarySearch = new BinarySearch();
-                    binarySearch.getResult();
+                    binarySearch.showResult();
+                }
+                case 4 -> {
+                    System.out.println("Bubble Sort");
+                    System.out.println("Bubble Sort");
                 }
                 default -> System.out.println("Invalid Option!");
             }

@@ -40,7 +40,7 @@ public class BinarySearch {
         }
         return "This took " + count + " searches to find " + numberToFind;
     }
-    public void getResult(){
+    public void showResult(){
         System.out.println(this.result);
     }
 }

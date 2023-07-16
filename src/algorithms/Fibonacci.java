@@ -60,7 +60,7 @@ public class Fibonacci {
         if (position == 1) return 1;
         return findFibNumber(position - 1) + findFibNumber(position - 2);
     }
-    public void getResult() {
+    public void showResult() {
         System.out.println(this.result);
     }
 
