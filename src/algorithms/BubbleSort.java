@@ -25,6 +25,7 @@ public class BubbleSort {
         int[] arrayCopy = array.clone();
         int[] arr2 = array.clone();
         int temp;
+        long start = System.currentTimeMillis();
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length ; j++) {
                 if(array[i] > array[j]){
@@ -34,6 +35,8 @@ public class BubbleSort {
                 }
             }
         }
+        long end = System.currentTimeMillis();
+
         for (int i = 0; i < arr2.length; i++) {
             for (int j = i + 1; j < arr2.length ; j++) {
                 if(arr2[i] < arr2[j]){
@@ -44,7 +47,8 @@ public class BubbleSort {
             }
         }
 
-        return "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " + Arrays.toString(array) + "\nSorted Array: " + Arrays.toString(arr2);
+        return "\n\tBUBBLE SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " + Arrays.toString(array) +
+                "\nSorted Array: " + Arrays.toString(arr2) + "\nand took: " + (end - start) + " Millis";
     }
 
     public void showResult() {
