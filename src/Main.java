@@ -30,6 +30,10 @@ public class Main {
                     BubbleSort bubbleSort = new BubbleSort();
                     bubbleSort.showResult();
                 }
+                case 5 -> {
+                    InsertionSort insertionSort = new InsertionSort();
+                    insertionSort.showResult();
+                }
                 default -> System.out.println("Invalid Option!");
             }
 
