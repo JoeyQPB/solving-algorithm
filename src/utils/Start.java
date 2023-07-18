@@ -11,7 +11,8 @@ public class Start {
                         \t2 - Linear Search\s
                         \t3 - Binary Search\s
                         \t4 - Bubble Sort\s
-                        \t5 - Insertion Sort\s""");
+                        \t5 - Insertion Sort\s
+                        \t6 - Selection Sort\s""");
 
         return Integer.parseInt(sc.nextLine());
     }

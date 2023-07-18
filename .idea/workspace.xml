@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="feat: use array method of GetData">
+    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="feat: class to execute pick">
+      <change afterPath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ExecutePick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ExecutePick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2SEpNNDBfCFlqbQI4dVE0cBWXUZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +63,8 @@
       <updated>1688721555322</updated>
       <workItem from="1688721556085" duration="9788000" />
       <workItem from="1688777019425" duration="886000" />
-      <workItem from="1689472499215" duration="20773000" />
+      <workItem from="1689472499215" duration="21147000" />
+      <workItem from="1689671936379" duration="3965000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
@@ -96,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689564392656</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: class to execute pick">
+      <option name="closed" value="true" />
+      <created>1689672951209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689672951209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +126,7 @@
     <MESSAGE value="refactor: str return" />
     <MESSAGE value="feat: new class to get user data" />
     <MESSAGE value="feat: use array method of GetData" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: use array method of GetData" />
+    <MESSAGE value="feat: class to execute pick" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: class to execute pick" />
   </component>
 </project>
