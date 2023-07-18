@@ -13,6 +13,7 @@ public class BubbleSort {
         GetData getData = new GetData();
         this.arr = getData.array();
         this.result =  sort(this.arr);
+        showResult();
     }
 
     private String sort(int[] array) {

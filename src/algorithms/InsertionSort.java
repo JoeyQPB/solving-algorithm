@@ -9,6 +9,7 @@ public class InsertionSort {
         GetData getData = new GetData();
         this.array = getData.array();
         this.result =  sort();
+        showResult();
     }
 
     private String sort() {

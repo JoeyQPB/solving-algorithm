@@ -4,6 +4,7 @@ public class Fibonacci {
     private String result;
     public  Fibonacci(){
         gettingData();
+        showResult();
     }
     private void gettingData() {
         Scanner sc = new Scanner(System.in);

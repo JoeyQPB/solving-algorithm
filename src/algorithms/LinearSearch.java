@@ -17,6 +17,7 @@ public class LinearSearch {
         this.numberToFind = Integer.parseInt(sc.nextLine());
 
         this.result = search();
+        showResult();
     }
 
     private String search(){

@@ -8,6 +8,7 @@ public class BinarySearch {
     private String result;
     public BinarySearch(){
         getData();
+        showResult();
     }
 
     private void getData(){
