@@ -13,6 +13,7 @@ public class ExecutePick {
             case 4 -> new BubbleSort();
             case 5 -> new InsertionSort();
             case 6 -> new SelectionSort();
+            case 7 -> new HeapSort();
 
             default -> System.out.println("Invalid Option!");
         }

@@ -12,7 +12,9 @@ public class Start {
                         \t3 - Binary Search\s
                         \t4 - Bubble Sort\s
                         \t5 - Insertion Sort\s
-                        \t6 - Selection Sort\s""");
+                        \t6 - Selection Sort\s
+                        \t7 - Heap Sort\s
+                        """);
 
         return Integer.parseInt(sc.nextLine());
     }
