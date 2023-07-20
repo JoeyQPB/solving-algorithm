@@ -14,6 +14,7 @@ public class ExecutePick {
             case 5 -> new InsertionSort();
             case 6 -> new SelectionSort();
             case 7 -> new HeapSort();
+            case 8 -> new QuickSort();
 
             default -> System.out.println("Invalid Option!");
         }

@@ -14,6 +14,7 @@ public class Start {
                         \t5 - Insertion Sort\s
                         \t6 - Selection Sort\s
                         \t7 - Heap Sort\s
+                        \t8 - Quick Sort\s
                         """);
 
         return Integer.parseInt(sc.nextLine());

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="feat: Selection Sort">
-      <change afterPath="$PROJECT_DIR$/src/algorithms/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ExecutePick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ExecutePick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Start.java" afterDir="false" />
@@ -47,6 +47,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="solving-algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +74,8 @@
       <workItem from="1689472499215" duration="21147000" />
       <workItem from="1689671936379" duration="4327000" />
       <workItem from="1689686808670" duration="1109000" />
-      <workItem from="1689746223285" duration="4077000" />
+      <workItem from="1689746223285" duration="4396000" />
+      <workItem from="1689811671503" duration="1659000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
