@@ -15,7 +15,10 @@ public class QuickSort {
         showResult();
     }
 
-    private String sort() {
+    public QuickSort(int[] array) {
+        this.array = array;
+    }
+    public String sort() {
         int arrLength = this.array.length;
         int[] originalArray = this.array.clone();
 

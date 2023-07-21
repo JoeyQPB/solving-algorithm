@@ -16,7 +16,11 @@ public class BubbleSort {
         showResult();
     }
 
-    private String sort() {
+    public BubbleSort(int[] array) {
+        this.array = array;
+    }
+
+    public String sort() {
         int[] arrayCopy = this.array.clone();
         int[] arr2 = this.array.clone();
         int temp;

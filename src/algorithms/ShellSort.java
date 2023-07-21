@@ -17,7 +17,10 @@ public class ShellSort {
         showResult();
     }
 
-    private String sort() {
+    public ShellSort(int[] array) {
+        this.array = array;
+    }
+    public String sort() {
         int[] arrayCopy = this.array.clone();
         int h = 1,  element, j;
         int arrayLength = this.array.length;

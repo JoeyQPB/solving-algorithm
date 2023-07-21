@@ -15,7 +15,11 @@ public class InsertionSort {
         showResult();
     }
 
-    private String sort() {
+    public InsertionSort(int[] array) {
+        this.array = array;
+    }
+
+    public String sort() {
         int[] arrayCopy = this.array.clone();
         int[] arr2 = this.array.clone();
         int aux, j;

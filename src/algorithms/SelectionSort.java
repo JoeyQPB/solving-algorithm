@@ -15,7 +15,10 @@ public class SelectionSort {
         showResult();
     }
 
-    private String sort() {
+    public SelectionSort(int[] array) {
+        this.array = array;
+    }
+    public String sort() {
         int[] arrayCopy = this.array.clone();
         int[] arr2 = this.array.clone();
         int aux = 0, minor_position;

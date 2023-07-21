@@ -14,7 +14,11 @@ public class HeapSort {
         showResult();
     }
 
-    private String sort() {
+    public HeapSort(int[] array) {
+        this.array = array;
+    }
+
+    public String sort() {
         int arrLength = this.array.length;
         int[] originalArray = this.array.clone();
         int[] arr2 = this.array.clone();
