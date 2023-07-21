@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="feat: Selection Sort">
-      <change afterPath="$PROJECT_DIR$/src/algorithms/ShellSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ExecutePick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ExecutePick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Start.java" afterDir="false" />
-    </list>
+    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="Chore: CompareAlgorithms class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +19,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="2SEpNNDBfCFlqbQI4dVE0cBWXUZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -84,7 +76,7 @@
       <workItem from="1689811671503" duration="1812000" />
       <workItem from="1689830703990" duration="642000" />
       <workItem from="1689855266970" duration="165000" />
-      <workItem from="1689905972552" duration="5516000" />
+      <workItem from="1689905972552" duration="5892000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
@@ -166,7 +158,31 @@
       <option name="project" value="LOCAL" />
       <updated>1689679710091</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: new attributes">
+      <option name="closed" value="true" />
+      <created>1689912630269</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689912630269</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: Shell sort">
+      <option name="closed" value="true" />
+      <created>1689912649789</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689912649789</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Chore: CompareAlgorithms class">
+      <option name="closed" value="true" />
+      <created>1689912699078</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689912699078</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +199,9 @@
     <MESSAGE value="feat: implements ExecutePick class" />
     <MESSAGE value="feat: ExecutePick class" />
     <MESSAGE value="feat: Selection Sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Selection Sort" />
+    <MESSAGE value="feat: new attributes" />
+    <MESSAGE value="feat: Shell sort" />
+    <MESSAGE value="Chore: CompareAlgorithms class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chore: CompareAlgorithms class" />
   </component>
 </project>
