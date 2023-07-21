@@ -5,6 +5,9 @@ import java.util.Arrays;
 public class InsertionSort {
     private String result;
     private int[] array;
+    private Long executionTime;
+    private Long swaps = 0L;
+
     public InsertionSort() {
         GetData getData = new GetData();
         this.array = getData.array();
@@ -26,11 +29,15 @@ public class InsertionSort {
             while ( j >= 0 && this.array[j] > aux ) {
                 this.array[j + 1] = this.array[j];
                 j--;
+                this.swaps++;
             }
             this.array[j + 1] = aux;
+            this.swaps++;
         }
 
         long end = System.currentTimeMillis();
+
+        this.executionTime = end - start;
 
         for (int i = 1; i < arr2.length; i++ ) {
             aux = arr2[i];
@@ -44,10 +51,22 @@ public class InsertionSort {
         }
 
         return "\n\tINSERTION SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " +
-                Arrays.toString(array) + "\nSorted Array: " + Arrays.toString(arr2) + "\nand took: " + (end - start) + " Millis";
+                Arrays.toString(this.array) + "\nSorted Array: " + Arrays.toString(arr2) + "\nand took: " + this.executionTime + " Millis";
     }
 
     public void showResult() {
         System.out.println(this.result);
+    }
+
+    public int[] getArray() {
+        return this.array;
+    }
+
+    public Long getExecutionTime() {
+        return this.executionTime;
+    }
+
+    public Long getSwaps() {
+        return this.swaps;
     }
 }

@@ -5,29 +5,33 @@ import java.util.Arrays;
 
 public class QuickSort {
     private String result;
-    private int[] arr;
+    private int[] array;
+    private Long executionTime;
+    private Long swaps = 0L;
 
     public QuickSort() {
-        this.arr = new GetData().array();
+        this.array = new GetData().array();
         this.result = sort();
         showResult();
     }
 
     private String sort() {
-        int arrLength = this.arr.length;
-        int[] originalArray = this.arr.clone();
+        int arrLength = this.array.length;
+        int[] originalArray = this.array.clone();
 
         long start = System.currentTimeMillis();
 
-        quick(this.arr, 0,  arrLength - 1);
+        quick(this.array, 0,  arrLength - 1);
 
         long end = System.currentTimeMillis();
 
+        this.executionTime = end - start;
+
         return "\n\tQUICK SORT" + "\nOriginal Array: " + Arrays.toString(originalArray) +
-                "\nSorted Array: " + Arrays.toString(this.arr) + "\nand took: " + (end - start) + " Millis";
+                "\nSorted Array: " + Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis";
     }
 
-    static void quick(int[] array, int left, int right) {
+    private void quick(int[] array, int left, int right) {
         if (left < right) {
             int pivot = partition(array, left, right);
             quick(array, left, pivot);
@@ -35,7 +39,7 @@ public class QuickSort {
         }
     }
 
-    static int partition(int[] array, int left, int right) {
+    private int partition(int[] array, int left, int right) {
         int middle = (int) (right + left) / 2;
         int pivot = array[middle];
         int i = left - 1;
@@ -57,11 +61,23 @@ public class QuickSort {
             int aux = array[i];
             array[i] = array[j];
             array[j] = aux;
+            this.swaps++;
         }
     }
 
-
     public void showResult() {
         System.out.println(this.result);
+    }
+
+    public int[] getArray() {
+        return this.array;
+    }
+
+    public Long getExecutionTime() {
+        return this.executionTime;
+    }
+
+    public Long getSwaps() {
+        return this.swaps;
     }
 }

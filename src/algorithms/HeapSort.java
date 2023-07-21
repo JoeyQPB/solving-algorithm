@@ -5,44 +5,48 @@ import java.util.Arrays;
 
 public class HeapSort {
     private String result;
-    private int[] arr;
+    private int[] array;
+    private Long executionTime;
+    private Long swaps = 0L;
     public HeapSort () {
-        this.arr = new GetData().array();
+        this.array = new GetData().array();
         this.result = sort();
         showResult();
     }
 
     private String sort() {
-        int arrLength = this.arr.length;
-        int[] originalArray = this.arr.clone();
-        int[] arr2 = this.arr.clone();
+        int arrLength = this.array.length;
+        int[] originalArray = this.array.clone();
+        int[] arr2 = this.array.clone();
         // el: 2*i + 1 (son1) and  2*i + 2 (son2) - binary tree
 
         long start = System.currentTimeMillis();
 
         for (int i =  (arrLength /  2 - 1); i >= 0; i--) {
-            applyHeap(this.arr, arrLength, i);
+            applyHeap(this.array, arrLength, i);
         }
 
         for (int i = arrLength - 1; i > 0; i--) {
-            int aux = this.arr[0];
-            this.arr[0] = this.arr[i];
-            this.arr[i] = aux;
-
-            applyHeap(this.arr, i, 0);
+            int aux = this.array[0];
+            this.array[0] = this.array[i];
+            this.array[i] = aux;
+            this.swaps++;
+            applyHeap(this.array, i, 0);
         }
 
         long end = System.currentTimeMillis();
+
+        this.executionTime = end - start;
 
         for (int i =  (arrLength /  2 - 1); i >= 0; i--) {
             applyHeap(arr2, arrLength, i);
         }
 
         return "\n\tHEAP SORT" + "\nOriginal Array: " + Arrays.toString(originalArray) + "\nAlmost Sorted Array: " + Arrays.toString(arr2)
-                + "\nSorted Array: " + Arrays.toString(this.arr) + "\nand took: " + (end - start) + " Millis";
+                + "\nSorted Array: " + Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis";
     }
 
-    public static void applyHeap(int[] array, int arrLength, int i) {
+    public void applyHeap(int[] array, int arrLength, int i) {
         int root = i;
         int left = 2*i + 1;
         int right = 2*i + 2;
@@ -59,6 +63,7 @@ public class HeapSort {
             int aux = array[i];
             array[i] = array[root];
             array[root] = aux;
+            this.swaps++;
 
             applyHeap(array, arrLength, root);
         }
@@ -66,5 +71,17 @@ public class HeapSort {
 
     public void showResult() {
         System.out.println(this.result);
+    }
+
+    public int[] getArray() {
+        return this.array;
+    }
+
+    public Long getExecutionTime() {
+        return this.executionTime;
+    }
+
+    public Long getSwaps() {
+        return this.swaps;
     }
 }

@@ -6,6 +6,8 @@ import java.util.Arrays;
 public class SelectionSort {
     private String result;
     private int[] array;
+    private Long executionTime;
+    private Long swaps = 0L;
     public SelectionSort() {
         GetData getData = new GetData();
         this.array = getData.array();
@@ -30,9 +32,12 @@ public class SelectionSort {
             aux = this.array[minor_position];
             this.array[minor_position] = this.array[i];
             this.array[i] = aux;
+            this.swaps++;
         }
 
         long end = System.currentTimeMillis();
+
+        this.executionTime = end - start;
 
         for(int i = 0; i < arr2.length; i++) {
             for (int j = i + 1; j < arr2.length; j++) {
@@ -45,10 +50,22 @@ public class SelectionSort {
         }
 
         return "\n\tSELECTION SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " +
-                Arrays.toString(array) + "\nSorted Array: " + Arrays.toString(arr2) + "\nand took: " + (end - start) + " Millis";
+                Arrays.toString(array) + "\nSorted Array: " + Arrays.toString(arr2) + "\nand took: " +  this.executionTime + " Millis";
     }
 
     public void showResult() {
         System.out.println(this.result);
+    }
+
+    public int[] getArray() {
+        return this.array;
+    }
+
+    public Long getExecutionTime() {
+        return this.executionTime;
+    }
+
+    public Long getSwaps() {
+        return this.swaps;
     }
 }
