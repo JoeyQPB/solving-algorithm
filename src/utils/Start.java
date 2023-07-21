@@ -15,6 +15,8 @@ public class Start {
                         \t6 - Selection Sort\s
                         \t7 - Heap Sort\s
                         \t8 - Quick Sort\s
+                        \t9 - Shell Sort\s
+                        \t10 - Compare Sorted Algorithms\s
                         """);
 
         return Integer.parseInt(sc.nextLine());

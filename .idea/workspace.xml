@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="feat: Selection Sort">
-      <change afterPath="$PROJECT_DIR$/src/algorithms/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/ShellSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ExecutePick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ExecutePick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Start.java" afterDir="false" />
     </list>
@@ -75,7 +81,10 @@
       <workItem from="1689671936379" duration="4327000" />
       <workItem from="1689686808670" duration="1109000" />
       <workItem from="1689746223285" duration="4396000" />
-      <workItem from="1689811671503" duration="1659000" />
+      <workItem from="1689811671503" duration="1812000" />
+      <workItem from="1689830703990" duration="642000" />
+      <workItem from="1689855266970" duration="165000" />
+      <workItem from="1689905972552" duration="5516000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
