@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="feat: new class CompareAlgorithms">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/ShellSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" afterDir="false" />
-    </list>
+    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="fix string format" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +78,7 @@
       <workItem from="1689855266970" duration="165000" />
       <workItem from="1689905972552" duration="5892000" />
       <workItem from="1689952322363" duration="1867000" />
-      <workItem from="1689994063339" duration="5318000" />
+      <workItem from="1689994063339" duration="5994000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
@@ -225,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690001574706</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix string format">
+      <option name="closed" value="true" />
+      <created>1690006178174</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690006178174</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +248,8 @@
     <MESSAGE value="Chore: new class CompareAlgorithms" />
     <MESSAGE value="fix: remove useless method" />
     <MESSAGE value="feat: new class CompareAlgorithms" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: new class CompareAlgorithms" />
+    <MESSAGE value="fix string format" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix string format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

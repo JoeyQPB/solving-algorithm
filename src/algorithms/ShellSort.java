@@ -70,7 +70,8 @@ public class ShellSort {
         }
 
         return "\n\tBUBBLE SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " +
-                Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis";
+                Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis"
+                + "\nand does: " + getSwaps() + " swaps";
     }
     public void showResult() {
         System.out.println(this.result);

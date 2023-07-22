@@ -63,7 +63,8 @@ public class InsertionSort {
         }
 
         return "\n\tINSERTION SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " +
-                Arrays.toString(this.array) + "\nSorted Array: " + "\nand took: " + this.executionTime + " Millis";
+                Arrays.toString(this.array) + "\nSorted Array: " + "\nand took: " + this.executionTime + " Millis"
+                + "\nand does: " + getSwaps() + " swaps";
     }
 
     public void showResult() {

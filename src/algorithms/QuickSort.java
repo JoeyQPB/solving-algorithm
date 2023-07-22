@@ -50,7 +50,8 @@ public class QuickSort {
         }
 
         return "\n\tQUICK SORT" + "\nOriginal Array: " + Arrays.toString(originalArray) +
-                "\nSorted Array: " + Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis";
+                "\nSorted Array: " + Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis" +
+                "\nand does: " + getSwaps() + " swaps";
     }
 
     private void quick(int[] array, int left, int right) {

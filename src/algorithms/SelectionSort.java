@@ -62,7 +62,8 @@ public class SelectionSort {
         }
 
         return "\n\tSELECTION SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " +
-                Arrays.toString(array) + "\nand took: " +  this.executionTime + " Millis";
+                Arrays.toString(array) + "\nand took: " +  this.executionTime + " Millis"
+                + "\nand does: " + getSwaps() + " swaps";
     }
 
     public void showResult() {

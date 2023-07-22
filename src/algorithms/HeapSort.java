@@ -66,7 +66,8 @@ public class HeapSort {
         }
 
         return "\n\tHEAP SORT" + "\nOriginal Array: " + Arrays.toString(originalArray) + "\nAlmost Sorted Array: " + Arrays.toString(arr2)
-                + "\nSorted Array: " + Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis";
+                + "\nSorted Array: " + Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis"
+                + "\nand does: " + getSwaps() + " swaps";
     }
 
     public void applyHeap(int[] array, int arrLength, int i) {
