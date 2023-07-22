@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="Chore: new class CompareAlgorithms" />
+    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="Chore: new class CompareAlgorithms">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +81,7 @@
       <workItem from="1689855266970" duration="165000" />
       <workItem from="1689905972552" duration="5892000" />
       <workItem from="1689952322363" duration="1867000" />
+      <workItem from="1689994063339" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
