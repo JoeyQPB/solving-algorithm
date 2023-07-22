@@ -20,26 +20,44 @@ public class SelectionSort {
     }
     public String sort() {
         int[] arrayCopy = this.array.clone();
-        int aux, minor_position;
 
-        long start = System.currentTimeMillis();
+        Thread sortingThread = new Thread(() -> {
+            int aux, minor_position;
 
-        for(int i = 0; i < this.array.length; i++) {
-            minor_position = i;
-            for (int j = i + 1; j < this.array.length; j++) {
-                if (this.array[j] < this.array[minor_position]) {
-                    minor_position = j;
+            long start = System.currentTimeMillis();
+
+            for (int i = 0; i < this.array.length; i++) {
+                minor_position = i;
+                for (int j = i + 1; j < this.array.length; j++) {
+                    if (this.array[j] < this.array[minor_position]) {
+                        minor_position = j;
+                    }
                 }
+                aux = this.array[minor_position];
+                this.array[minor_position] = this.array[i];
+                this.array[i] = aux;
+                this.swaps++;
             }
-            aux = this.array[minor_position];
-            this.array[minor_position] = this.array[i];
-            this.array[i] = aux;
-            this.swaps++;
+
+            long end = System.currentTimeMillis();
+            this.executionTime = end - start;
+        });
+
+        sortingThread.start();
+
+        try {
+            sortingThread.join(150_000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
-        long end = System.currentTimeMillis();
-
-        this.executionTime = end - start;
+        if (sortingThread.isAlive()) {
+            sortingThread.interrupt();
+            this.executionTime = 9999999L;
+            this.swaps = 9999999L;
+            return "\n\tQUICK SORT: " + "\nOriginal Array: " + Arrays.toString(arrayCopy)
+                    + "\nSorting took more than 2 minutes and was terminated.";
+        }
 
         return "\n\tSELECTION SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " +
                 Arrays.toString(array) + "\nand took: " +  this.executionTime + " Millis";

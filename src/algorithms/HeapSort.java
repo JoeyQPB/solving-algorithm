@@ -19,31 +19,48 @@ public class HeapSort {
     }
 
     public String sort() {
-        int arrLength = this.array.length;
         int[] originalArray = this.array.clone();
         int[] arr2 = this.array.clone();
         // el: 2*i + 1 (son1) and  2*i + 2 (son2) - binary tree
 
-        long start = System.currentTimeMillis();
+        Thread sortingThread = new Thread(() -> {
+            int arrLength = this.array.length;
+            long start = System.currentTimeMillis();
 
-        for (int i =  (arrLength /  2 - 1); i >= 0; i--) {
-            applyHeap(this.array, arrLength, i);
+            for (int i = (arrLength / 2 - 1); i >= 0; i--) {
+                applyHeap(this.array, arrLength, i);
+            }
+
+            for (int i = arrLength - 1; i > 0; i--) {
+                int aux = this.array[0];
+                this.array[0] = this.array[i];
+                this.array[i] = aux;
+                this.swaps++;
+                applyHeap(this.array, i, 0);
+            }
+
+            for (int i =  (arrLength /  2 - 1); i >= 0; i--) {
+                applyHeap(arr2, arrLength, i);
+            }
+
+            long end = System.currentTimeMillis();
+            this.executionTime = end - start;
+        });
+
+        sortingThread.start();
+
+        try {
+            sortingThread.join(150_000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
-        for (int i = arrLength - 1; i > 0; i--) {
-            int aux = this.array[0];
-            this.array[0] = this.array[i];
-            this.array[i] = aux;
-            this.swaps++;
-            applyHeap(this.array, i, 0);
-        }
-
-        long end = System.currentTimeMillis();
-
-        this.executionTime = end - start;
-
-        for (int i =  (arrLength /  2 - 1); i >= 0; i--) {
-            applyHeap(arr2, arrLength, i);
+        if (sortingThread.isAlive()) {
+            sortingThread.interrupt();
+            this.executionTime = 9999999L;
+            this.swaps = 9999999L;
+            return "\n\tHEAP SORT: " + "\nOriginal Array: " + Arrays.toString(originalArray)
+                    + "\nSorting took more than 2 minutes and was terminated.";
         }
 
         return "\n\tHEAP SORT" + "\nOriginal Array: " + Arrays.toString(originalArray) + "\nAlmost Sorted Array: " + Arrays.toString(arr2)

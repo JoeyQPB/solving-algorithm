@@ -19,16 +19,33 @@ public class QuickSort {
         this.array = array;
     }
     public String sort() {
-        int arrLength = this.array.length;
         int[] originalArray = this.array.clone();
 
-        long start = System.currentTimeMillis();
+        Thread sortingThread = new Thread(() -> {
+            int arrLength = this.array.length;
+            long start = System.currentTimeMillis();
 
-        quick(this.array, 0,  arrLength - 1);
+            quick(this.array, 0, arrLength - 1);
 
-        long end = System.currentTimeMillis();
+            long end = System.currentTimeMillis();
+            this.executionTime = end - start;
+        });
 
-        this.executionTime = end - start;
+        sortingThread.start();
+
+        try {
+            sortingThread.join(150_000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        if (sortingThread.isAlive()) {
+            sortingThread.interrupt();
+            this.executionTime = 9999999L;
+            this.swaps = 9999999L;
+            return "\n\tQUICK SORT: " + "\nOriginal Array: " + Arrays.toString(originalArray)
+                    + "\nSorting took more than 2 minutes and was terminated.";
+        }
 
         return "\n\tQUICK SORT" + "\nOriginal Array: " + Arrays.toString(originalArray) +
                 "\nSorted Array: " + Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis";
