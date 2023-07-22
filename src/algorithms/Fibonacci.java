@@ -1,4 +1,5 @@
 package algorithms;
+
 import java.util.Scanner;
 public class Fibonacci {
     private String result;

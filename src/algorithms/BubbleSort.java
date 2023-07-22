@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class BubbleSort {
     private String result;
-    private int[] array;
+    private final int[] array;
     private Long executionTime;
     private Long swaps = 0L;
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="Chore: CompareAlgorithms class" />
+    <list default="true" id="b805c88b-6334-48a3-b200-313ddb79e96b" name="Changes" comment="Chore: new class CompareAlgorithms" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +77,7 @@
       <workItem from="1689830703990" duration="642000" />
       <workItem from="1689855266970" duration="165000" />
       <workItem from="1689905972552" duration="5892000" />
+      <workItem from="1689952322363" duration="1867000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
@@ -182,7 +183,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689912699078</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: new constructor and change access method">
+      <option name="closed" value="true" />
+      <created>1689952675593</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1689952675593</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Chore: new class CompareAlgorithms">
+      <option name="closed" value="true" />
+      <created>1689954187980</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1689954187980</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +219,8 @@
     <MESSAGE value="feat: new attributes" />
     <MESSAGE value="feat: Shell sort" />
     <MESSAGE value="Chore: CompareAlgorithms class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chore: CompareAlgorithms class" />
+    <MESSAGE value="feat: new constructor and change access method" />
+    <MESSAGE value="Chore: new class CompareAlgorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chore: new class CompareAlgorithms" />
   </component>
 </project>

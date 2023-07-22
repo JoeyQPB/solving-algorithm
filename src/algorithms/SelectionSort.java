@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class SelectionSort {
     private String result;
-    private int[] array;
+    private final int[] array;
     private Long executionTime;
     private Long swaps = 0L;
     public SelectionSort() {
@@ -21,7 +21,7 @@ public class SelectionSort {
     public String sort() {
         int[] arrayCopy = this.array.clone();
         int[] arr2 = this.array.clone();
-        int aux = 0, minor_position;
+        int aux, minor_position;
 
         long start = System.currentTimeMillis();
 

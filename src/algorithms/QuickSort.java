@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class QuickSort {
     private String result;
-    private int[] array;
+    private final int[] array;
     private Long executionTime;
     private Long swaps = 0L;
 
@@ -43,7 +43,7 @@ public class QuickSort {
     }
 
     private int partition(int[] array, int left, int right) {
-        int middle = (int) (right + left) / 2;
+        int middle = (right + left) / 2;
         int pivot = array[middle];
         int i = left - 1;
         int j = right + 1;

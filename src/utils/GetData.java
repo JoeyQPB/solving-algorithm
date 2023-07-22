@@ -1,4 +1,5 @@
 package utils;
+
 import java.util.Scanner;
 public class GetData {
     public int[] array() {

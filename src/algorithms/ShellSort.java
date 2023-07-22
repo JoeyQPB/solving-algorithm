@@ -1,12 +1,11 @@
 package algorithms;
 
 import utils.GetData;
-
 import java.util.Arrays;
 
 public class ShellSort {
     private String result;
-    private int[] array;
+    private final int[] array;
     private Long executionTime;
     private Long swaps = 0L;
 
@@ -30,7 +29,7 @@ public class ShellSort {
         while (h < arrayLength) {
             h = h * 3 + 1;
         }
-        h = (int) Math.floor(h/3);
+        h = (h/3);
 
         while (h > 0) {
             for ( int i = h; i < arrayLength; i++) {

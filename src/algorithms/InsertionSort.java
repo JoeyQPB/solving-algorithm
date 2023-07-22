@@ -1,10 +1,11 @@
 package algorithms;
+
 import utils.GetData;
 import java.util.Arrays;
 
 public class InsertionSort {
     private String result;
-    private int[] array;
+    private final int[] array;
     private Long executionTime;
     private Long swaps = 0L;
 
