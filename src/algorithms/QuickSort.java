@@ -2,6 +2,7 @@ package algorithms;
 
 import utils.GetData;
 import java.util.Arrays;
+import java.lang.Thread;
 
 public class QuickSort {
     private String result;
@@ -17,6 +18,7 @@ public class QuickSort {
 
     public QuickSort(int[] array) {
         this.array = array;
+        sort();
     }
     public String sort() {
         int[] originalArray = this.array.clone();

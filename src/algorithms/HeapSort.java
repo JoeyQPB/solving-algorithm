@@ -2,6 +2,7 @@ package algorithms;
 
 import utils.GetData;
 import java.util.Arrays;
+import java.lang.Thread;
 
 public class HeapSort {
     private String result;
@@ -16,6 +17,7 @@ public class HeapSort {
 
     public HeapSort(int[] array) {
         this.array = array;
+        sort();
     }
 
     public String sort() {

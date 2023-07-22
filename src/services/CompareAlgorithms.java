@@ -15,33 +15,33 @@ public class CompareAlgorithms {
         }
 
         // 100
-        int[] array_100 = new int[10];
+        int[] array_100 = new int[100];
         for( int i = 0; i < 100; i++) {
-            array_10[i] = (int) (Math.random() * 100);
+            array_100[i] = (int) (Math.random() * 100);
         }
 
         // 1000
-        int[] array_1000 = new int[10];
+        int[] array_1000 = new int[1000];
         for( int i = 0; i < 1000; i++) {
-            array_10[i] = (int) (Math.random() * 100);
+            array_1000[i] = (int) (Math.random() * 100);
         }
 
         // 10000
-        int[] array_10000 = new int[10];
+        int[] array_10000 = new int[10000];
         for( int i = 0; i < 10000; i++) {
-            array_10[i] = (int) (Math.random() * 100);
+            array_10000[i] = (int) (Math.random() * 100);
         }
 
         // 100000
-        int[] array_100000 = new int[10];
+        int[] array_100000 = new int[100000];
         for( int i = 0; i < 100000; i++) {
-            array_10[i] = (int) (Math.random() * 100);
+            array_100000[i] = (int) (Math.random() * 100);
         }
 
         // 1000000
-        int[] array_1000000 = new int[10];
+        int[] array_1000000 = new int[1000000];
         for( int i = 0; i < 1000000; i++) {
-            array_10[i] = (int) (Math.random() * 100);
+            array_1000000[i] = (int) (Math.random() * 100);
         }
 
         BubbleSort bubbleSort_10 = new BubbleSort(array_10);
@@ -87,94 +87,94 @@ public class CompareAlgorithms {
         ShellSort shellSort_1000000 = new ShellSort(array_1000000);
 
         sbTime.append("\nCOMPARE TIME IN ML\t\t --10--\t\t --100--\t\t --1K--\t\t --10K--\t\t --100K--\t\t --1M--")
-                .append("\nBubble Sort:\t\t")
-                .append(bubbleSort_10.getExecutionTime()).append(" --\t\t")
-                .append(bubbleSort_100.getExecutionTime()).append(" --\t\t")
-                .append(bubbleSort_1000.getExecutionTime()).append(" --\t\t")
-                .append(bubbleSort_10000.getExecutionTime()).append(" --\t\t")
-                .append(bubbleSort_100000.getExecutionTime()).append(" --\t\t")
-                .append(bubbleSort_1000000.getExecutionTime()).append(" --\t\t")
-                .append("\nSelection Sort:\t\t")
-                .append(selectionSort_10.getExecutionTime()).append(" --\t\t")
-                .append(selectionSort_100.getExecutionTime()).append(" --\t\t")
-                .append(selectionSort_1000.getExecutionTime()).append(" --\t\t")
-                .append(selectionSort_10000.getExecutionTime()).append(" --\t\t")
-                .append(selectionSort_100000.getExecutionTime()).append(" --\t\t")
-                .append(selectionSort_1000000.getExecutionTime()).append(" --\t\t")
-                .append("\nInsertion Sort:\t\t")
-                .append(insertionSort_10.getExecutionTime()).append(" -- \t\t")
-                .append(insertionSort_100.getExecutionTime()).append(" --\t\t")
-                .append(insertionSort_1000.getExecutionTime()).append(" --\t\t")
-                .append(insertionSort_10000.getExecutionTime()).append(" --\t\t")
-                .append(insertionSort_100000.getExecutionTime()).append(" --\t\t")
-                .append(insertionSort_1000000.getExecutionTime()).append(" --\t\t")
-                .append("\nHeap Sort:\t\t")
-                .append(heapSort_10.getExecutionTime()).append(" -- \t\t")
-                .append(heapSort_100.getExecutionTime()).append(" --\t\t")
-                .append(heapSort_1000.getExecutionTime()).append(" --\t\t")
-                .append(heapSort_10000.getExecutionTime()).append(" --\t\t")
-                .append(heapSort_100000.getExecutionTime()).append(" --\t\t")
-                .append(heapSort_1000000.getExecutionTime()).append(" --\t\t")
-                .append("\nQuick Sort:\t\t")
-                .append(quickSort_10.getExecutionTime()).append(" -- \t\t")
-                .append(quickSort_100.getExecutionTime()).append(" --\t\t")
-                .append(quickSort_1000.getExecutionTime()).append(" --\t\t")
-                .append(quickSort_10000.getExecutionTime()).append(" --\t\t")
-                .append(quickSort_100000.getExecutionTime()).append(" --\t\t")
-                .append(quickSort_1000000.getExecutionTime()).append(" --\t\t")
-                .append("\n\"Shell Sort:\t\t")
-                .append(shellSort_10.getExecutionTime()).append(" -- \t\t")
-                .append(shellSort_100.getExecutionTime()).append(" --\t\t")
-                .append(shellSort_1000.getExecutionTime()).append(" --\t\t")
-                .append(shellSort_10000.getExecutionTime()).append(" --\t\t")
-                .append(shellSort_100000.getExecutionTime()).append(" --\t\t")
-                .append(shellSort_1000000.getExecutionTime()).append(" --\t\t");
+                .append("\nBubble Sort:\t\t\t")
+                .append(bubbleSort_10.getExecutionTime()).append(" --\t\t\t")
+                .append(bubbleSort_100.getExecutionTime()).append(" --\t\t\t")
+                .append(bubbleSort_1000.getExecutionTime()).append(" --\t\t\t")
+                .append(bubbleSort_10000.getExecutionTime()).append(" --\t\t\t")
+                .append(bubbleSort_100000.getExecutionTime()).append(" --\t\t\t")
+                .append(bubbleSort_1000000.getExecutionTime()).append(" --\t\t\t")
+                .append("\nSelection Sort:\t\t\t")
+                .append(selectionSort_10.getExecutionTime()).append(" --\t\t\t")
+                .append(selectionSort_100.getExecutionTime()).append(" --\t\t\t")
+                .append(selectionSort_1000.getExecutionTime()).append(" --\t\t\t")
+                .append(selectionSort_10000.getExecutionTime()).append(" --\t\t\t")
+                .append(selectionSort_100000.getExecutionTime()).append(" --\t\t\t")
+                .append(selectionSort_1000000.getExecutionTime()).append(" --\t\t\t")
+                .append("\nInsertion Sort:\t\t\t")
+                .append(insertionSort_10.getExecutionTime()).append(" -- \t\t\t")
+                .append(insertionSort_100.getExecutionTime()).append(" --\t\t\t")
+                .append(insertionSort_1000.getExecutionTime()).append(" --\t\t\t")
+                .append(insertionSort_10000.getExecutionTime()).append(" --\t\t\t")
+                .append(insertionSort_100000.getExecutionTime()).append(" --\t\t\t")
+                .append(insertionSort_1000000.getExecutionTime()).append(" --\t\t\t")
+                .append("\nHeap Sort:\t\t\t")
+                .append(heapSort_10.getExecutionTime()).append(" -- \t\t\t")
+                .append(heapSort_100.getExecutionTime()).append(" --\t\t\t")
+                .append(heapSort_1000.getExecutionTime()).append(" --\t\t\t")
+                .append(heapSort_10000.getExecutionTime()).append(" --\t\t\t")
+                .append(heapSort_100000.getExecutionTime()).append(" --\t\t\t")
+                .append(heapSort_1000000.getExecutionTime()).append(" --\t\t\t")
+                .append("\nQuick Sort:\t\t\t")
+                .append(quickSort_10.getExecutionTime()).append(" -- \t\t\t")
+                .append(quickSort_100.getExecutionTime()).append(" --\t\t\t")
+                .append(quickSort_1000.getExecutionTime()).append(" --\t\t\t")
+                .append(quickSort_10000.getExecutionTime()).append(" --\t\t\t")
+                .append(quickSort_100000.getExecutionTime()).append(" --\t\t\t")
+                .append(quickSort_1000000.getExecutionTime()).append(" --\t\t\t")
+                .append("\n\"Shell Sort:\t\t\t")
+                .append(shellSort_10.getExecutionTime()).append(" -- \t\t\t")
+                .append(shellSort_100.getExecutionTime()).append(" --\t\t\t")
+                .append(shellSort_1000.getExecutionTime()).append(" --\t\t\t")
+                .append(shellSort_10000.getExecutionTime()).append(" --\t\t\t")
+                .append(shellSort_100000.getExecutionTime()).append(" --\t\t\t")
+                .append(shellSort_1000000.getExecutionTime()).append(" --\t\t\t");
 
 
 
         sbSwaps.append("\nCOMPARE TIME IN ML\t\t --10--\t\t --100--\t\t --1K--\t\t --10K--\t\t --100K--\t\t --1M--")
-                .append("\nBubble Sort:\t\t")
-                .append(bubbleSort_10.getSwaps()).append(" --\t\t")
-                .append(bubbleSort_100.getSwaps()).append(" --\t\t")
-                .append(bubbleSort_1000.getSwaps()).append(" --\t\t")
-                .append(bubbleSort_10000.getSwaps()).append(" --\t\t")
-                .append(bubbleSort_100000.getSwaps()).append(" --\t\t")
-                .append(bubbleSort_1000000.getSwaps()).append(" --\t\t")
-                .append("\nSelection Sort:\t\t")
-                .append(selectionSort_10.getSwaps()).append(" --\t\t")
-                .append(selectionSort_100.getSwaps()).append(" --\t\t")
-                .append(selectionSort_1000.getSwaps()).append(" --\t\t")
-                .append(selectionSort_10000.getSwaps()).append(" --\t\t")
-                .append(selectionSort_100000.getSwaps()).append(" --\t\t")
-                .append(selectionSort_1000000.getSwaps()).append(" --\t\t")
-                .append("\nInsertion Sort:\t\t")
-                .append(insertionSort_10.getSwaps()).append(" -- \t\t")
-                .append(insertionSort_100.getSwaps()).append(" --\t\t")
-                .append(insertionSort_1000.getSwaps()).append(" --\t\t")
-                .append(insertionSort_10000.getSwaps()).append(" --\t\t")
-                .append(insertionSort_100000.getSwaps()).append(" --\t\t")
-                .append(insertionSort_1000000.getSwaps()).append(" --\t\t")
-                .append("\nHeap Sort:\t\t")
-                .append(heapSort_10.getSwaps()).append(" -- \t\t")
-                .append(heapSort_100.getSwaps()).append(" --\t\t")
-                .append(heapSort_1000.getSwaps()).append(" --\t\t")
-                .append(heapSort_10000.getSwaps()).append(" --\t\t")
-                .append(heapSort_100000.getSwaps()).append(" --\t\t")
-                .append(heapSort_1000000.getSwaps()).append(" --\t\t")
-                .append("\nQuick Sort:\t\t")
-                .append(quickSort_10.getSwaps()).append(" -- \t\t")
-                .append(quickSort_100.getSwaps()).append(" --\t\t")
-                .append(quickSort_1000.getSwaps()).append(" --\t\t")
-                .append(quickSort_10000.getSwaps()).append(" --\t\t")
-                .append(quickSort_100000.getSwaps()).append(" --\t\t")
-                .append(quickSort_1000000.getSwaps()).append(" --\t\t")
-                .append("\n\"Shell Sort:\t\t")
-                .append(shellSort_10.getSwaps()).append(" -- \t\t")
-                .append(shellSort_100.getSwaps()).append(" --\t\t")
-                .append(shellSort_1000.getSwaps()).append(" --\t\t")
-                .append(shellSort_10000.getSwaps()).append(" --\t\t")
-                .append(shellSort_100000.getSwaps()).append(" --\t\t")
-                .append(shellSort_1000000.getSwaps()).append(" --\t\t");
+                .append("\nBubble Sort:\t\t\t")
+                .append(bubbleSort_10.getSwaps()).append(" --\t\t\t")
+                .append(bubbleSort_100.getSwaps()).append(" --\t\t\t")
+                .append(bubbleSort_1000.getSwaps()).append(" --\t\t\t")
+                .append(bubbleSort_10000.getSwaps()).append(" --\t\t\t")
+                .append(bubbleSort_100000.getSwaps()).append(" --\t\t\t")
+                .append(bubbleSort_1000000.getSwaps()).append(" --\t\t\t")
+                .append("\nSelection Sort:\t\t\t")
+                .append(selectionSort_10.getSwaps()).append(" --\t\t\t")
+                .append(selectionSort_100.getSwaps()).append(" --\t\t\t")
+                .append(selectionSort_1000.getSwaps()).append(" --\t\t\t")
+                .append(selectionSort_10000.getSwaps()).append(" --\t\t\t")
+                .append(selectionSort_100000.getSwaps()).append(" --\t\t\t")
+                .append(selectionSort_1000000.getSwaps()).append(" --\t\t\t")
+                .append("\nInsertion Sort:\t\t\t")
+                .append(insertionSort_10.getSwaps()).append(" -- \t\t\t")
+                .append(insertionSort_100.getSwaps()).append(" --\t\t\t")
+                .append(insertionSort_1000.getSwaps()).append(" --\t\t\t")
+                .append(insertionSort_10000.getSwaps()).append(" --\t\t\t")
+                .append(insertionSort_100000.getSwaps()).append(" --\t\t\t")
+                .append(insertionSort_1000000.getSwaps()).append(" --\t\t\t")
+                .append("\nHeap Sort:\t\t\t")
+                .append(heapSort_10.getSwaps()).append(" -- \t\t\t")
+                .append(heapSort_100.getSwaps()).append(" --\t\t\t")
+                .append(heapSort_1000.getSwaps()).append(" --\t\t\t")
+                .append(heapSort_10000.getSwaps()).append(" --\t\t\t")
+                .append(heapSort_100000.getSwaps()).append(" --\t\t\t")
+                .append(heapSort_1000000.getSwaps()).append(" --\t\t\t")
+                .append("\nQuick Sort:\t\t\t")
+                .append(quickSort_10.getSwaps()).append(" -- \t\t\t")
+                .append(quickSort_100.getSwaps()).append(" --\t\t\t")
+                .append(quickSort_1000.getSwaps()).append(" --\t\t\t")
+                .append(quickSort_10000.getSwaps()).append(" --\t\t\t")
+                .append(quickSort_100000.getSwaps()).append(" --\t\t\t")
+                .append(quickSort_1000000.getSwaps()).append(" --\t\t\t")
+                .append("\n\"Shell Sort:\t\t\t")
+                .append(shellSort_10.getSwaps()).append(" -- \t\t\t")
+                .append(shellSort_100.getSwaps()).append(" --\t\t\t")
+                .append(shellSort_1000.getSwaps()).append(" --\t\t\t")
+                .append(shellSort_10000.getSwaps()).append(" --\t\t\t")
+                .append(shellSort_100000.getSwaps()).append(" --\t\t\t")
+                .append(shellSort_1000000.getSwaps()).append(" --\t\t\t");
 
         System.out.println(sbTime);
         System.out.println(sbSwaps);

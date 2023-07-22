@@ -2,6 +2,7 @@ package algorithms;
 
 import utils.GetData;
 import java.util.Arrays;
+import java.lang.Thread;
 
 public class SelectionSort {
     private String result;
@@ -17,6 +18,7 @@ public class SelectionSort {
 
     public SelectionSort(int[] array) {
         this.array = array;
+        sort();
     }
     public String sort() {
         int[] arrayCopy = this.array.clone();

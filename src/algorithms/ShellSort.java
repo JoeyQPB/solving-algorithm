@@ -2,6 +2,7 @@ package algorithms;
 
 import utils.GetData;
 import java.util.Arrays;
+import java.lang.Thread;
 
 public class ShellSort {
     private String result;
@@ -18,6 +19,7 @@ public class ShellSort {
 
     public ShellSort(int[] array) {
         this.array = array;
+        sort();
     }
     public String sort() {
         int[] arrayCopy = this.array.clone();

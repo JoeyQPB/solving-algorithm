@@ -2,6 +2,7 @@ package algorithms;
 
 import utils.GetData;
 import java.util.Arrays;
+import java.lang.Thread;
 
 public class InsertionSort {
     private String result;
@@ -18,6 +19,7 @@ public class InsertionSort {
 
     public InsertionSort(int[] array) {
         this.array = array;
+        sort();
     }
 
     public String sort() {

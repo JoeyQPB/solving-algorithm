@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/src/algorithms/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithms/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/ShellSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CompareAlgorithms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <workItem from="1689855266970" duration="165000" />
       <workItem from="1689905972552" duration="5892000" />
       <workItem from="1689952322363" duration="1867000" />
-      <workItem from="1689994063339" duration="3450000" />
+      <workItem from="1689994063339" duration="4155000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: getResult method">
       <option name="closed" value="true" />
@@ -249,5 +250,15 @@
     <MESSAGE value="fix: remove useless method" />
     <MESSAGE value="feat: new class CompareAlgorithms" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: new class CompareAlgorithms" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
