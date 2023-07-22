@@ -50,15 +50,11 @@ public class ShellSort {
 
         this.executionTime = end - start;
 
-        return "\n\tBUBBLE SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " + Arrays.toString(this.array) +
-                "\nand took: " + this.executionTime + " Millis";
+        return "\n\tBUBBLE SORT" + "\nOriginal Array: " + Arrays.toString(arrayCopy) + "\nSorted Array: " +
+                Arrays.toString(this.array) + "\nand took: " + this.executionTime + " Millis";
     }
     public void showResult() {
         System.out.println(this.result);
-    }
-
-    public int[] getArray() {
-        return this.array;
     }
 
     public Long getExecutionTime() {

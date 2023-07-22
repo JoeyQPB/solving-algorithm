@@ -77,10 +77,6 @@ public class HeapSort {
         System.out.println(this.result);
     }
 
-    public int[] getArray() {
-        return this.array;
-    }
-
     public Long getExecutionTime() {
         return this.executionTime;
     }
